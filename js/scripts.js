@@ -7,10 +7,10 @@ $(function() {
     });
     items2.sort();
 
-    items2.forEach(function(item){
-      $(".list-items").append("<li>" + item + "</li>");
-    });
 
+    for (var index = 0; index < items2.length; index += 1) {
+      $(".list-items").append("<li>" + items2[index] + "</li>");
+    }
 
 
     console.log(items2);
